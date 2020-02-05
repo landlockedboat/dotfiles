@@ -1,4 +1,4 @@
-# Dotfiles for macOS
+# Dotfiles for Windows WSL
 
 > Zsh, neovim, tbd...
 
