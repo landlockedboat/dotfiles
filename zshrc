@@ -1,9 +1,12 @@
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 export ZSH="$HOME/.oh-my-zsh"
 # pure
 ZSH_THEME=""
 
 plugins=(
-  git
+git
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -23,6 +26,16 @@ dv() {
 bk() {
 	cd ..
 	ls
+}
+
+git-login-vikepic() {
+	git config user.name "vikepic"
+	git config user.email "victorenriquealcazar@gmail.com"
+}
+
+git-login-lts() {
+	git config user.name "victor.alcazar"
+	git config user.email "victor.alcazar@lts-beratung.de"
 }
 
 export NVM_DIR="$HOME/.nvm"
