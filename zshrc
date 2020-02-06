@@ -7,6 +7,7 @@ ZSH_THEME=""
 
 plugins=(
 git
+zshmarks
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -41,6 +42,13 @@ git-login-lts() {
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvmç
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# jabba
+[ -s "$HOME/.jabba/jabba.sh" ] && source "$HOME/.jabba/jabba.sh"
+
+# Docker WSL
+PATH="$PATH:$HOME/.local/bin"
+export DOCKER_HOST=tcp://localhost:2375
 
 # cd to home by default (WSL does not do this)
 cd
