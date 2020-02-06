@@ -12,7 +12,7 @@ zshmarks
 
 source $ZSH/oh-my-zsh.sh
 
-fpath+=("$HOME/.nvm/versions/node/v10.18.1/lib/node_modules/pure-prompt/functions")
+fpath+=("$HOME/.nvm/versions/node/v10.19.0/lib/node_modules/pure-prompt/functions")
 autoload -U promptinit; promptinit
 prompt pure
 
